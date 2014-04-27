@@ -43,7 +43,7 @@ class Level03 extends FlxState {
 		flippyCam.bounds.bottom = 480;
 
 
-		player = new Player(Std.int(map.height),5);
+		player = new Player(Std.int(map.height),6);
 		door = new Door();
 		hotEnemyGroup = new FlxGroup();
 		coldEnemyGroup = new FlxGroup();

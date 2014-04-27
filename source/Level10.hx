@@ -17,7 +17,7 @@ import flixel.util.FlxRect;
 /**
  * A FlxState which can be used for the actual gameplay.
  */
-class Level06 extends FlxState {
+class Level10 extends FlxState {
 	private var player:Player;
 	private var ogmoLoader:FlxOgmoLoader;
 	private var map:FlxTilemap;
@@ -27,6 +27,10 @@ class Level06 extends FlxState {
 	private var door:Door;
 	private var hotEnemyGroup:FlxGroup;
 	private var coldEnemyGroup:FlxGroup;
+	private var hotBombGroup:FlxGroup;
+	private var coldBrickGroup:FlxGroup;
+	private var coldBombGroup:FlxGroup;
+	private var hotBrickGroup:FlxGroup;
 	
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -35,7 +39,7 @@ class Level06 extends FlxState {
 	{
 		super.create();
 		bgColor = 0xFFC0C0C0;
-		ogmoLoader = new FlxOgmoLoader("assets/data/level06.oel");
+		ogmoLoader = new FlxOgmoLoader("assets/data/level10.oel");
 		map = ogmoLoader.loadTilemap("assets/images/tileSheet.fw.png", 16, 16, "midGround");
 
 		flippyCam = new FlxCamera(0,0,320,240);
@@ -47,7 +51,10 @@ class Level06 extends FlxState {
 		door = new Door();
 		hotEnemyGroup = new FlxGroup();
 		coldEnemyGroup = new FlxGroup();
-		player.onTop = false;
+		hotBombGroup = new FlxGroup();
+		coldBrickGroup = new FlxGroup();
+		coldBombGroup = new FlxGroup();
+		hotBrickGroup = new FlxGroup();
 		
 		ogmoLoader.loadEntities(entityLoader, "objects");
 		
@@ -59,7 +66,11 @@ class Level06 extends FlxState {
 		add(door);
 		add(hotEnemyGroup);
 		add(coldEnemyGroup);
+		add(hotBombGroup);
 		add(healthCount);
+		add(coldBrickGroup);
+		add(coldBombGroup);
+		add(hotBrickGroup);
 
 		flippyCam.follow(player);
 		flippyCam.style = FlxCamera.STYLE_PLATFORMER;
@@ -78,6 +89,15 @@ class Level06 extends FlxState {
 				hotEnemyGroup.add(new HotEnemy(Std.parseFloat(data.get("x")), Std.parseFloat(data.get("y")), player, Std.int(map.height)));
 			case "coldenemy":
 				coldEnemyGroup.add(new ColdEnemy(Std.parseFloat(data.get("x")), Std.parseFloat(data.get("y")), player, Std.int(map.height)));
+			case "hotbomb":
+				hotBombGroup.add(new HotBomb(Std.parseFloat(data.get("x")), Std.parseFloat(data.get("y")), Std.int(map.height), player));
+			case "coldbrick":
+				coldBrickGroup.add(new ColdBrick(Std.parseFloat(data.get("x")), Std.parseFloat(data.get("y"))));
+			case "coldbomb":
+				coldBombGroup.add(new ColdBomb(Std.parseFloat(data.get("x")), Std.parseFloat(data.get("y")), Std.int(map.height), player));
+			case "hotbrick":
+				hotBrickGroup.add(new HotBrick(Std.parseFloat(data.get("x")), Std.parseFloat(data.get("y"))));
+				
 		}
 	}
 	
@@ -107,6 +127,16 @@ class Level06 extends FlxState {
 		FlxG.collide(hotEnemyGroup, hotEnemyGroup, FlxObject.separate);
 		FlxG.collide(coldEnemyGroup, hotEnemyGroup, FlxObject.separate);
 		FlxG.collide(coldEnemyGroup, coldEnemyGroup, FlxObject.separate);
+		FlxG.collide(map, hotBombGroup, FlxObject.separate);
+		FlxG.collide(hotBombGroup, player, hotBombCollisionHandler);
+		FlxG.collide(coldBrickGroup, player, FlxObject.separate);
+		FlxG.collide(hotBombGroup, coldBrickGroup, hotBombColdBrickCollisionHandler);
+		FlxG.collide(hotBrickGroup, player, FlxObject.separate);
+		FlxG.collide(coldBombGroup, hotBrickGroup, coldBombHotBrickCollisionHandler);
+		FlxG.collide(map, coldBombGroup, FlxObject.separate);
+		FlxG.collide(coldBombGroup, player, coldBombCollisionHandler);
+		FlxG.collide(hotBombGroup, coldEnemyGroup, hotBombColdEnemyCollisionHandler);
+		FlxG.collide(coldBombGroup, hotEnemyGroup, coldBombHotEnemyCollisionHandler);
 		healthCount.text = "Health: " + player.health;
 		
 		if (player.y > map.height / 2 - 8) {
@@ -121,11 +151,72 @@ class Level06 extends FlxState {
 		
 		if (player.health <= 0) {
 			FlxG.sound.play("assets/sounds/Randomize3.wav");
-			FlxG.switchState(new Level06());
+			FlxG.switchState(new Level10());
 		}
 		
 		super.update();
 	}	
+	
+	function coldBombHotEnemyCollisionHandler(bomb:Bomb, enemy:HotEnemy) 
+	{
+		if (!bomb.isHeld) {
+			bomb.kill();
+			coldEnemyGroup.add(new ColdEnemy(enemy.x, enemy.y, player, Std.int(map.height)));
+			enemy.kill();
+		}
+	}
+	
+	function hotBombColdEnemyCollisionHandler(bomb:Bomb, enemy:ColdEnemy) 
+	{
+		if (!bomb.isHeld) {
+			bomb.kill();
+			hotEnemyGroup.add(new HotEnemy(enemy.x, enemy.y, player, Std.int(map.height)));
+			enemy.kill();
+		}
+	}
+	
+	function coldBombCollisionHandler(bomb:Bomb, player:Player) 
+	{
+		if (!player.holdingSomething) {
+			bomb.isHeld = true;
+			player.holdingSomething = true;
+			player.bombBeingHeld = bomb;
+			bomb.drag.set(0, 0);
+			bomb.velocity.x = 0;
+			bomb.velocity.y = 0;
+			bomb.acceleration.y = 0;
+		}
+	}
+	
+	function coldBombHotBrickCollisionHandler(bomb:Bomb, brick:Brick) 
+	{
+		if (!bomb.isHeld) {
+			bomb.kill();
+			brick.kill();
+			FlxG.sound.play("assets/sounds/Explosion7.wav");
+		}
+	}
+	
+	function hotBombColdBrickCollisionHandler(bomb:Bomb, brick:Brick) {
+		if (!bomb.isHeld) {
+			bomb.kill();
+			brick.kill();
+			FlxG.sound.play("assets/sounds/Explosion7.wav");
+		}
+	}
+	
+	function hotBombCollisionHandler(bomb:Bomb, player:Player) {
+		if (!player.holdingSomething) {
+			bomb.isHeld = true;
+			player.holdingSomething = true;
+			player.bombBeingHeld = bomb;
+			bomb.drag.set(0, 0);
+			bomb.velocity.x = 0;
+			bomb.velocity.y = 0;
+			bomb.acceleration.y = 0;
+			bomb.acceleration.x = 0;
+		}
+	}
 	
 	function coldEnemyCollisionHandler(enemy:FlxObject, player:Player) {
 		if (player.isOnTop()) {
@@ -141,7 +232,7 @@ class Level06 extends FlxState {
 	}
 	
 	function doorCollisionHandler(door:FlxObject, player:Player) {
-		FlxG.switchState(new Level07());
+		FlxG.switchState(new Level11());
 	}
 	
 	function hotEnemyCollisionHandler(enemy:FlxObject, player:Player) {

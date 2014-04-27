@@ -58,18 +58,34 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/level08.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/data/level09.oel", __ASSET__assets_data_level09_oel);
 		type.set ("assets/data/level09.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level10.oel", __ASSET__assets_data_level10_oel);
+		type.set ("assets/data/level10.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level11.oel", __ASSET__assets_data_level11_oel);
+		type.set ("assets/data/level11.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level12.oel", __ASSET__assets_data_level12_oel);
+		type.set ("assets/data/level12.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level20.oel", __ASSET__assets_data_level20_oel);
+		type.set ("assets/data/level20.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/images/BLANK.fw.png", __ASSET__assets_images_blank_fw_png);
 		type.set ("assets/images/BLANK.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/coldBomb.fw.png", __ASSET__assets_images_coldbomb_fw_png);
+		type.set ("assets/images/coldBomb.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/coldBoss.fw.png", __ASSET__assets_images_coldboss_fw_png);
+		type.set ("assets/images/coldBoss.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/coldBrick.fw.png", __ASSET__assets_images_coldbrick_fw_png);
 		type.set ("assets/images/coldBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/coldEnemy.fw.png", __ASSET__assets_images_coldenemy_fw_png);
 		type.set ("assets/images/coldEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/coldTiles.fw.png", __ASSET__assets_images_coldtiles_fw_png);
 		type.set ("assets/images/coldTiles.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/fireBoss.fw.png", __ASSET__assets_images_fireboss_fw_png);
+		type.set ("assets/images/fireBoss.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/fireEnemy.fw.png", __ASSET__assets_images_fireenemy_fw_png);
 		type.set ("assets/images/fireEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/haxeFlixeltut.fw.png", __ASSET__assets_images_haxeflixeltut_fw_png);
 		type.set ("assets/images/haxeFlixeltut.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/hotBomb.fw.png", __ASSET__assets_images_hotbomb_fw_png);
+		type.set ("assets/images/hotBomb.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/hotBrick.fw.png", __ASSET__assets_images_hotbrick_fw_png);
 		type.set ("assets/images/hotBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/hotTiles.fw.png", __ASSET__assets_images_hottiles_fw_png);
@@ -111,12 +127,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		addExternal("assets/data/level07.oel", "text", "assets/data/level07.oel");
 		addExternal("assets/data/level08.oel", "text", "assets/data/level08.oel");
 		addExternal("assets/data/level09.oel", "text", "assets/data/level09.oel");
+		addExternal("assets/data/level10.oel", "text", "assets/data/level10.oel");
+		addExternal("assets/data/level11.oel", "text", "assets/data/level11.oel");
+		addExternal("assets/data/level12.oel", "text", "assets/data/level12.oel");
+		addExternal("assets/data/level20.oel", "text", "assets/data/level20.oel");
 		addExternal("assets/images/BLANK.fw.png", "image", "assets/images/BLANK.fw.png");
+		addExternal("assets/images/coldBomb.fw.png", "image", "assets/images/coldBomb.fw.png");
+		addExternal("assets/images/coldBoss.fw.png", "image", "assets/images/coldBoss.fw.png");
 		addExternal("assets/images/coldBrick.fw.png", "image", "assets/images/coldBrick.fw.png");
 		addExternal("assets/images/coldEnemy.fw.png", "image", "assets/images/coldEnemy.fw.png");
 		addExternal("assets/images/coldTiles.fw.png", "image", "assets/images/coldTiles.fw.png");
+		addExternal("assets/images/fireBoss.fw.png", "image", "assets/images/fireBoss.fw.png");
 		addExternal("assets/images/fireEnemy.fw.png", "image", "assets/images/fireEnemy.fw.png");
 		addExternal("assets/images/haxeFlixeltut.fw.png", "image", "assets/images/haxeFlixeltut.fw.png");
+		addExternal("assets/images/hotBomb.fw.png", "image", "assets/images/hotBomb.fw.png");
 		addExternal("assets/images/hotBrick.fw.png", "image", "assets/images/hotBrick.fw.png");
 		addExternal("assets/images/hotTiles.fw.png", "image", "assets/images/hotTiles.fw.png");
 		addExternal("assets/images/ld48Toon.png", "image", "assets/images/ld48Toon.png");
@@ -171,8 +195,26 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/level09.oel", __ASSET__assets_data_level09_oel);
 		type.set ("assets/data/level09.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		
+		className.set ("assets/data/level10.oel", __ASSET__assets_data_level10_oel);
+		type.set ("assets/data/level10.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level11.oel", __ASSET__assets_data_level11_oel);
+		type.set ("assets/data/level11.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level12.oel", __ASSET__assets_data_level12_oel);
+		type.set ("assets/data/level12.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level20.oel", __ASSET__assets_data_level20_oel);
+		type.set ("assets/data/level20.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
 		className.set ("assets/images/BLANK.fw.png", __ASSET__assets_images_blank_fw_png);
 		type.set ("assets/images/BLANK.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/coldBomb.fw.png", __ASSET__assets_images_coldbomb_fw_png);
+		type.set ("assets/images/coldBomb.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/coldBoss.fw.png", __ASSET__assets_images_coldboss_fw_png);
+		type.set ("assets/images/coldBoss.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/coldBrick.fw.png", __ASSET__assets_images_coldbrick_fw_png);
 		type.set ("assets/images/coldBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
@@ -183,11 +225,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/coldTiles.fw.png", __ASSET__assets_images_coldtiles_fw_png);
 		type.set ("assets/images/coldTiles.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
+		className.set ("assets/images/fireBoss.fw.png", __ASSET__assets_images_fireboss_fw_png);
+		type.set ("assets/images/fireBoss.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
 		className.set ("assets/images/fireEnemy.fw.png", __ASSET__assets_images_fireenemy_fw_png);
 		type.set ("assets/images/fireEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/haxeFlixeltut.fw.png", __ASSET__assets_images_haxeflixeltut_fw_png);
 		type.set ("assets/images/haxeFlixeltut.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/hotBomb.fw.png", __ASSET__assets_images_hotbomb_fw_png);
+		type.set ("assets/images/hotBomb.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/hotBrick.fw.png", __ASSET__assets_images_hotbrick_fw_png);
 		type.set ("assets/images/hotBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
@@ -821,12 +869,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep class __ASSET__assets_data_level07_oel extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_data_level08_oel extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_data_level09_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level10_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level11_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level12_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level20_oel extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_blank_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_coldbomb_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_coldboss_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_coldbrick_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_coldenemy_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_coldtiles_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_fireboss_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_fireenemy_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_haxeflixeltut_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_hotbomb_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_hotbrick_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_hottiles_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_ld48toon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -876,6 +932,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
+
 #elseif (windows || mac || linux)
 
 
@@ -890,12 +954,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/data/level07.oel") class __ASSET__assets_data_level07_oel extends flash.utils.ByteArray {}
 @:file("assets/data/level08.oel") class __ASSET__assets_data_level08_oel extends flash.utils.ByteArray {}
 @:file("assets/data/level09.oel") class __ASSET__assets_data_level09_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level10.oel") class __ASSET__assets_data_level10_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level11.oel") class __ASSET__assets_data_level11_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level12.oel") class __ASSET__assets_data_level12_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level20.oel") class __ASSET__assets_data_level20_oel extends flash.utils.ByteArray {}
 @:bitmap("assets/images/BLANK.fw.png") class __ASSET__assets_images_blank_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/coldBomb.fw.png") class __ASSET__assets_images_coldbomb_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/coldBoss.fw.png") class __ASSET__assets_images_coldboss_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/coldBrick.fw.png") class __ASSET__assets_images_coldbrick_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/coldEnemy.fw.png") class __ASSET__assets_images_coldenemy_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/coldTiles.fw.png") class __ASSET__assets_images_coldtiles_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/fireBoss.fw.png") class __ASSET__assets_images_fireboss_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/fireEnemy.fw.png") class __ASSET__assets_images_fireenemy_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/haxeFlixeltut.fw.png") class __ASSET__assets_images_haxeflixeltut_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/hotBomb.fw.png") class __ASSET__assets_images_hotbomb_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hotBrick.fw.png") class __ASSET__assets_images_hotbrick_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hotTiles.fw.png") class __ASSET__assets_images_hottiles_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/ld48Toon.png") class __ASSET__assets_images_ld48toon_png extends flash.display.BitmapData {}

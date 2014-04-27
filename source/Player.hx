@@ -4,6 +4,7 @@ import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.util.FlxPoint;
 import flixel.util.FlxSpriteUtil;
+import flixel.effects.FlxFlicker;
 
 /**
  * ...
@@ -13,7 +14,7 @@ class Player extends FlxSprite {
 	private var aY:Int;
 	private var mapHeight:Int;
 	private var surfaceSwitch:Bool = false;
-	private var onTop:Bool = true;
+	public var onTop:Bool = true;
 	private var flickering:Bool = false;
 	public var holdingSomething:Bool = false;
 	public var bombBeingHeld:Bomb;
@@ -55,7 +56,7 @@ class Player extends FlxSprite {
 			}
 		}
 		
-		if (FlxG.keys.anyPressed(["A", "LEFT"])) {
+		if (FlxG.keys.anyPressed(["A", "LEFT","Q"])) {
 			acceleration.x = -800;
 			facing = FlxObject.LEFT;
 			flipX = true;
@@ -75,30 +76,31 @@ class Player extends FlxSprite {
 				animation.play("bottomWalk");
 			}
 		}
-		if (FlxG.keys.anyPressed(["A", "LEFT"]) && FlxG.keys.anyPressed(["D", "RIGHT"])) {
+		if (FlxG.keys.anyPressed(["A", "LEFT","Q"]) && FlxG.keys.anyPressed(["D", "RIGHT"])) {
 			acceleration.x = 0;
 		}
 		
 		if (FlxG.keys.anyJustPressed(["SPACE"]) && holdingSomething) {
+			bombBeingHeld.isHeld = false;
+			holdingSomething = false;
+			FlxG.sound.play("assets/sounds/Laser_Shoot6.wav");
 			if (facing == FlxObject.RIGHT) {
-				bombBeingHeld.isHeld = false;
-				bombBeingHeld.x = x + width;
+				//bombBeingHeld.x = x + width;
 				bombBeingHeld.velocity.x = 275;
 				bombBeingHeld.drag.set(200, 200);
 				bombBeingHeld.velocity.y = 0;
 			} else {
-				bombBeingHeld.isHeld = false;
-				bombBeingHeld.x = x - bombBeingHeld.width;
+				//bombBeingHeld.x = x - bombBeingHeld.width;
 				bombBeingHeld.velocity.x = -275;
 				bombBeingHeld.drag.set(200, 200);
 				bombBeingHeld.velocity.y = 0;
 			}
-			holdingSomething = false;
-			bombBeingHeld = null;
+
+			//bombBeingHeld = null;
 		}
 		
 		if (velocity.y == 0) {
-			if (FlxG.keys.anyJustPressed(["W", "UP"]) && onTop) {
+			if (FlxG.keys.anyJustPressed(["W", "UP", "Z"]) && onTop) {
 				velocity.y = -200;
 				FlxG.sound.play("assets/sounds/Jump4.wav");
 			}
@@ -112,7 +114,7 @@ class Player extends FlxSprite {
 			aY = -500;
 			if (onTop) {
 				//makeGraphic(8, 16, 0xFF0969A2);
-				health -= 1;
+				hurt(1);
 				FlxG.sound.play("assets/sounds/Hit_Hurt35.wav");
 			}
 			onTop = false;
@@ -120,7 +122,8 @@ class Player extends FlxSprite {
 			aY = 500;
 			if (!onTop) {
 				//makeGraphic(8, 16, 0xFFFF7A00);
-				health -= 1;
+				hurt(1);
+				FlxFlicker.flicker(this);
 				FlxG.sound.play("assets/sounds/Hit_Hurt35.wav");
 			}
 			onTop = true;
@@ -148,14 +151,19 @@ class Player extends FlxSprite {
 		return onTop;
 	}
 	
-/*	override public function hurt(damage:Float):Void {
-		if (flickering) {
-			return;
+	override public function hurt(damage:Float):Void {
+		if (FlxFlicker.isFlickering(this)) {
+			super.update();
+		} else {
+			if (damage > 0) {
+				FlxFlicker.flicker(this,0.3);
+			}
+			health -= damage;
 		}
-		
+		super.update();
 	}
 	
-	private function flicker(duration:Float):Void {
+/*	private function flicker(duration:Float):Void {
 		FlxSpriteUtil.flicker(this, duration, 0.02);
 		flickering = true;
 	}*/

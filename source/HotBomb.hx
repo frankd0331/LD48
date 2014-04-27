@@ -10,7 +10,7 @@ class HotBomb extends Bomb {
 
 	public function new(X:Float=0, Y:Float=0, newMapHeight = 480, playerLink:Player, newOnTop = true) {
 		super(X, Y, newMapHeight, playerLink, newOnTop);
-		makeGraphic(8, 8, 0xFFFF7A00);
-
+		//makeGraphic(8, 8, 0xFFFF7A00);
+		loadGraphic("assets/images/hotBomb.fw.png");
 	}
 }

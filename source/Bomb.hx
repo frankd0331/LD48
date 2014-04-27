@@ -1,5 +1,6 @@
 package ;
 
+import flixel.FlxObject;
 import flixel.FlxSprite;
 
 /**
@@ -51,9 +52,24 @@ class Bomb extends FlxSprite {
 			}
 			acceleration.y = aY;
 		} else {
-			x = thePlayer.x;
-			y = thePlayer.y;
 			drag.set(0, 0);
+			if (thePlayer.isOnTop()) {
+				if (thePlayer.facing == FlxObject.RIGHT) {
+					x = thePlayer.x + thePlayer.width;
+					y = thePlayer.y;
+				} else {
+					x = thePlayer.x - thePlayer.width;
+					y = thePlayer.y;
+				}
+			} else {
+				if (thePlayer.facing == FlxObject.RIGHT) {
+					x = thePlayer.x + thePlayer.width;
+					y = thePlayer.y + thePlayer.height - height;
+				} else {
+					x = thePlayer.x - thePlayer.width;
+					y = thePlayer.y + thePlayer.height - height;
+				}
+			}
 		}
 
 		

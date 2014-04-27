@@ -11,11 +11,20 @@ import flixel.util.FlxMath;
  * A FlxState which can be used for the game's menu.
  */
 class MenuState extends FlxState {
+	private var message:FlxText;
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
 	override public function create():Void {
 		super.create();
+		message = new FlxText(FlxG.width / 2 -50, FlxG.height / 4 * 2, 100, "Apologeticum:    For Ludum Dare 29");
+		add(message);
+		add(new FlxButton(FlxG.width/2 -40, FlxG.height/4 *3, "LEVELS", levelMenu));
+	}
+	
+	function levelMenu():Void 
+	{
+		FlxG.switchState(new LevelChooser());
 	}
 	
 	/**
@@ -31,6 +40,6 @@ class MenuState extends FlxState {
 	 */
 	override public function update():Void {
 		super.update();
-		FlxG.switchState(new Level08());
+		//FlxG.switchState(new Level12());
 	}	
 }

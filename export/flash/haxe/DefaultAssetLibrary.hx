@@ -36,26 +36,62 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
-		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
-		type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/ld48.oep", __ASSET__assets_data_ld48_oep);
+		type.set ("assets/data/ld48.oep", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level00.oel", __ASSET__assets_data_level00_oel);
+		type.set ("assets/data/level00.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/data/level01.oel", __ASSET__assets_data_level01_oel);
 		type.set ("assets/data/level01.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level02.oel", __ASSET__assets_data_level02_oel);
+		type.set ("assets/data/level02.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level03.oel", __ASSET__assets_data_level03_oel);
+		type.set ("assets/data/level03.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level04.oel", __ASSET__assets_data_level04_oel);
+		type.set ("assets/data/level04.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level05.oel", __ASSET__assets_data_level05_oel);
+		type.set ("assets/data/level05.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level06.oel", __ASSET__assets_data_level06_oel);
+		type.set ("assets/data/level06.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level07.oel", __ASSET__assets_data_level07_oel);
+		type.set ("assets/data/level07.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level08.oel", __ASSET__assets_data_level08_oel);
+		type.set ("assets/data/level08.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/level09.oel", __ASSET__assets_data_level09_oel);
+		type.set ("assets/data/level09.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		className.set ("assets/images/BLANK.fw.png", __ASSET__assets_images_blank_fw_png);
 		type.set ("assets/images/BLANK.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/coldBrick.fw.png", __ASSET__assets_images_coldbrick_fw_png);
 		type.set ("assets/images/coldBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/coldEnemy.fw.png", __ASSET__assets_images_coldenemy_fw_png);
+		type.set ("assets/images/coldEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/coldTiles.fw.png", __ASSET__assets_images_coldtiles_fw_png);
+		type.set ("assets/images/coldTiles.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/fireEnemy.fw.png", __ASSET__assets_images_fireenemy_fw_png);
+		type.set ("assets/images/fireEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/haxeFlixeltut.fw.png", __ASSET__assets_images_haxeflixeltut_fw_png);
 		type.set ("assets/images/haxeFlixeltut.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/hotBrick.fw.png", __ASSET__assets_images_hotbrick_fw_png);
 		type.set ("assets/images/hotBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
-		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
-		type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/images/hotTiles.fw.png", __ASSET__assets_images_hottiles_fw_png);
+		type.set ("assets/images/hotTiles.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/images/ld48Toon.png", __ASSET__assets_images_ld48toon_png);
+		type.set ("assets/images/ld48Toon.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		className.set ("assets/images/sheet.xml", __ASSET__assets_images_sheet_xml);
 		type.set ("assets/images/sheet.xml", Reflect.field (AssetType, "text".toUpperCase ()));
-		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
-		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
-		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
-		type.set ("assets/sounds/sounds-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/images/tileSheet.fw.png", __ASSET__assets_images_tilesheet_fw_png);
+		type.set ("assets/images/tileSheet.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		className.set ("assets/sounds/Explosion7.wav", __ASSET__assets_sounds_explosion7_wav);
+		type.set ("assets/sounds/Explosion7.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/Hit_Hurt35.wav", __ASSET__assets_sounds_hit_hurt35_wav);
+		type.set ("assets/sounds/Hit_Hurt35.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/Jump4.wav", __ASSET__assets_sounds_jump4_wav);
+		type.set ("assets/sounds/Jump4.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/Laser_Shoot6.wav", __ASSET__assets_sounds_laser_shoot6_wav);
+		type.set ("assets/sounds/Laser_Shoot6.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/Powerup12.wav", __ASSET__assets_sounds_powerup12_wav);
+		type.set ("assets/sounds/Powerup12.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		className.set ("assets/sounds/Randomize3.wav", __ASSET__assets_sounds_randomize3_wav);
+		type.set ("assets/sounds/Randomize3.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
 		className.set ("assets/sounds/beep.mp3", __ASSET__assets_sounds_beep_mp3);
 		type.set ("assets/sounds/beep.mp3", Reflect.field (AssetType, "music".toUpperCase ()));
 		className.set ("assets/sounds/flixel.mp3", __ASSET__assets_sounds_flixel_mp3);
@@ -64,16 +100,34 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#elseif html5
 		
-		addExternal("assets/data/data-goes-here.txt", "text", "assets/data/data-goes-here.txt");
+		addExternal("assets/data/ld48.oep", "text", "assets/data/ld48.oep");
+		addExternal("assets/data/level00.oel", "text", "assets/data/level00.oel");
 		addExternal("assets/data/level01.oel", "text", "assets/data/level01.oel");
+		addExternal("assets/data/level02.oel", "text", "assets/data/level02.oel");
+		addExternal("assets/data/level03.oel", "text", "assets/data/level03.oel");
+		addExternal("assets/data/level04.oel", "text", "assets/data/level04.oel");
+		addExternal("assets/data/level05.oel", "text", "assets/data/level05.oel");
+		addExternal("assets/data/level06.oel", "text", "assets/data/level06.oel");
+		addExternal("assets/data/level07.oel", "text", "assets/data/level07.oel");
+		addExternal("assets/data/level08.oel", "text", "assets/data/level08.oel");
+		addExternal("assets/data/level09.oel", "text", "assets/data/level09.oel");
 		addExternal("assets/images/BLANK.fw.png", "image", "assets/images/BLANK.fw.png");
 		addExternal("assets/images/coldBrick.fw.png", "image", "assets/images/coldBrick.fw.png");
+		addExternal("assets/images/coldEnemy.fw.png", "image", "assets/images/coldEnemy.fw.png");
+		addExternal("assets/images/coldTiles.fw.png", "image", "assets/images/coldTiles.fw.png");
+		addExternal("assets/images/fireEnemy.fw.png", "image", "assets/images/fireEnemy.fw.png");
 		addExternal("assets/images/haxeFlixeltut.fw.png", "image", "assets/images/haxeFlixeltut.fw.png");
 		addExternal("assets/images/hotBrick.fw.png", "image", "assets/images/hotBrick.fw.png");
-		addExternal("assets/images/images-go-here.txt", "text", "assets/images/images-go-here.txt");
+		addExternal("assets/images/hotTiles.fw.png", "image", "assets/images/hotTiles.fw.png");
+		addExternal("assets/images/ld48Toon.png", "image", "assets/images/ld48Toon.png");
 		addExternal("assets/images/sheet.xml", "text", "assets/images/sheet.xml");
-		addExternal("assets/music/music-goes-here.txt", "text", "assets/music/music-goes-here.txt");
-		addExternal("assets/sounds/sounds-go-here.txt", "text", "assets/sounds/sounds-go-here.txt");
+		addExternal("assets/images/tileSheet.fw.png", "image", "assets/images/tileSheet.fw.png");
+		addExternal("assets/sounds/Explosion7.wav", "sound", "assets/sounds/Explosion7.wav");
+		addExternal("assets/sounds/Hit_Hurt35.wav", "sound", "assets/sounds/Hit_Hurt35.wav");
+		addExternal("assets/sounds/Jump4.wav", "sound", "assets/sounds/Jump4.wav");
+		addExternal("assets/sounds/Laser_Shoot6.wav", "sound", "assets/sounds/Laser_Shoot6.wav");
+		addExternal("assets/sounds/Powerup12.wav", "sound", "assets/sounds/Powerup12.wav");
+		addExternal("assets/sounds/Randomize3.wav", "sound", "assets/sounds/Randomize3.wav");
 		addExternal("assets/sounds/beep.mp3", "music", "assets/sounds/beep.mp3");
 		addExternal("assets/sounds/flixel.mp3", "music", "assets/sounds/flixel.mp3");
 		
@@ -84,11 +138,38 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		var loadManifest = false;
 		
-		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
-		type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/data/ld48.oep", __ASSET__assets_data_ld48_oep);
+		type.set ("assets/data/ld48.oep", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level00.oel", __ASSET__assets_data_level00_oel);
+		type.set ("assets/data/level00.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		
 		className.set ("assets/data/level01.oel", __ASSET__assets_data_level01_oel);
 		type.set ("assets/data/level01.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level02.oel", __ASSET__assets_data_level02_oel);
+		type.set ("assets/data/level02.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level03.oel", __ASSET__assets_data_level03_oel);
+		type.set ("assets/data/level03.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level04.oel", __ASSET__assets_data_level04_oel);
+		type.set ("assets/data/level04.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level05.oel", __ASSET__assets_data_level05_oel);
+		type.set ("assets/data/level05.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level06.oel", __ASSET__assets_data_level06_oel);
+		type.set ("assets/data/level06.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level07.oel", __ASSET__assets_data_level07_oel);
+		type.set ("assets/data/level07.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level08.oel", __ASSET__assets_data_level08_oel);
+		type.set ("assets/data/level08.oel", Reflect.field (AssetType, "text".toUpperCase ()));
+		
+		className.set ("assets/data/level09.oel", __ASSET__assets_data_level09_oel);
+		type.set ("assets/data/level09.oel", Reflect.field (AssetType, "text".toUpperCase ()));
 		
 		className.set ("assets/images/BLANK.fw.png", __ASSET__assets_images_blank_fw_png);
 		type.set ("assets/images/BLANK.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
@@ -96,23 +177,50 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/coldBrick.fw.png", __ASSET__assets_images_coldbrick_fw_png);
 		type.set ("assets/images/coldBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
+		className.set ("assets/images/coldEnemy.fw.png", __ASSET__assets_images_coldenemy_fw_png);
+		type.set ("assets/images/coldEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/coldTiles.fw.png", __ASSET__assets_images_coldtiles_fw_png);
+		type.set ("assets/images/coldTiles.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/fireEnemy.fw.png", __ASSET__assets_images_fireenemy_fw_png);
+		type.set ("assets/images/fireEnemy.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
 		className.set ("assets/images/haxeFlixeltut.fw.png", __ASSET__assets_images_haxeflixeltut_fw_png);
 		type.set ("assets/images/haxeFlixeltut.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/hotBrick.fw.png", __ASSET__assets_images_hotbrick_fw_png);
 		type.set ("assets/images/hotBrick.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
-		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
-		type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/images/hotTiles.fw.png", __ASSET__assets_images_hottiles_fw_png);
+		type.set ("assets/images/hotTiles.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
+		
+		className.set ("assets/images/ld48Toon.png", __ASSET__assets_images_ld48toon_png);
+		type.set ("assets/images/ld48Toon.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
 		className.set ("assets/images/sheet.xml", __ASSET__assets_images_sheet_xml);
 		type.set ("assets/images/sheet.xml", Reflect.field (AssetType, "text".toUpperCase ()));
 		
-		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
-		type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/images/tileSheet.fw.png", __ASSET__assets_images_tilesheet_fw_png);
+		type.set ("assets/images/tileSheet.fw.png", Reflect.field (AssetType, "image".toUpperCase ()));
 		
-		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
-		type.set ("assets/sounds/sounds-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+		className.set ("assets/sounds/Explosion7.wav", __ASSET__assets_sounds_explosion7_wav);
+		type.set ("assets/sounds/Explosion7.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/Hit_Hurt35.wav", __ASSET__assets_sounds_hit_hurt35_wav);
+		type.set ("assets/sounds/Hit_Hurt35.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/Jump4.wav", __ASSET__assets_sounds_jump4_wav);
+		type.set ("assets/sounds/Jump4.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/Laser_Shoot6.wav", __ASSET__assets_sounds_laser_shoot6_wav);
+		type.set ("assets/sounds/Laser_Shoot6.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/Powerup12.wav", __ASSET__assets_sounds_powerup12_wav);
+		type.set ("assets/sounds/Powerup12.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
+		
+		className.set ("assets/sounds/Randomize3.wav", __ASSET__assets_sounds_randomize3_wav);
+		type.set ("assets/sounds/Randomize3.wav", Reflect.field (AssetType, "sound".toUpperCase ()));
 		
 		className.set ("assets/sounds/beep.mp3", __ASSET__assets_sounds_beep_mp3);
 		type.set ("assets/sounds/beep.mp3", Reflect.field (AssetType, "music".toUpperCase ()));
@@ -702,16 +810,34 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if pixi
 #elseif flash
 
-@:keep class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_ld48_oep extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level00_oel extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_data_level01_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level02_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level03_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level04_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level05_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level06_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level07_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level08_oel extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_data_level09_oel extends flash.utils.ByteArray { }
 @:keep class __ASSET__assets_images_blank_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_coldbrick_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_coldenemy_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_coldtiles_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_fireenemy_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_haxeflixeltut_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_hotbrick_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_images_hottiles_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_images_ld48toon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep class __ASSET__assets_images_sheet_xml extends flash.utils.ByteArray { }
-@:keep class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
-@:keep class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
+@:keep class __ASSET__assets_images_tilesheet_fw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep class __ASSET__assets_sounds_explosion7_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_hit_hurt35_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_jump4_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_laser_shoot6_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_powerup12_wav extends flash.media.Sound { }
+@:keep class __ASSET__assets_sounds_randomize3_wav extends flash.media.Sound { }
 @:keep class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound { }
 
@@ -732,19 +858,55 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #elseif (windows || mac || linux)
 
 
-@:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray {}
+@:file("assets/data/ld48.oep") class __ASSET__assets_data_ld48_oep extends flash.utils.ByteArray {}
+@:file("assets/data/level00.oel") class __ASSET__assets_data_level00_oel extends flash.utils.ByteArray {}
 @:file("assets/data/level01.oel") class __ASSET__assets_data_level01_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level02.oel") class __ASSET__assets_data_level02_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level03.oel") class __ASSET__assets_data_level03_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level04.oel") class __ASSET__assets_data_level04_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level05.oel") class __ASSET__assets_data_level05_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level06.oel") class __ASSET__assets_data_level06_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level07.oel") class __ASSET__assets_data_level07_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level08.oel") class __ASSET__assets_data_level08_oel extends flash.utils.ByteArray {}
+@:file("assets/data/level09.oel") class __ASSET__assets_data_level09_oel extends flash.utils.ByteArray {}
 @:bitmap("assets/images/BLANK.fw.png") class __ASSET__assets_images_blank_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/coldBrick.fw.png") class __ASSET__assets_images_coldbrick_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/coldEnemy.fw.png") class __ASSET__assets_images_coldenemy_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/coldTiles.fw.png") class __ASSET__assets_images_coldtiles_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/fireEnemy.fw.png") class __ASSET__assets_images_fireenemy_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/haxeFlixeltut.fw.png") class __ASSET__assets_images_haxeflixeltut_fw_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hotBrick.fw.png") class __ASSET__assets_images_hotbrick_fw_png extends flash.display.BitmapData {}
-@:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray {}
+@:bitmap("assets/images/hotTiles.fw.png") class __ASSET__assets_images_hottiles_fw_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/ld48Toon.png") class __ASSET__assets_images_ld48toon_png extends flash.display.BitmapData {}
 @:file("assets/images/sheet.xml") class __ASSET__assets_images_sheet_xml extends flash.utils.ByteArray {}
-@:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray {}
-@:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray {}
+@:bitmap("assets/images/tileSheet.fw.png") class __ASSET__assets_images_tilesheet_fw_png extends flash.display.BitmapData {}
+@:sound("assets/sounds/Explosion7.wav") class __ASSET__assets_sounds_explosion7_wav extends flash.media.Sound {}
+@:sound("assets/sounds/Hit_Hurt35.wav") class __ASSET__assets_sounds_hit_hurt35_wav extends flash.media.Sound {}
+@:sound("assets/sounds/Jump4.wav") class __ASSET__assets_sounds_jump4_wav extends flash.media.Sound {}
+@:sound("assets/sounds/Laser_Shoot6.wav") class __ASSET__assets_sounds_laser_shoot6_wav extends flash.media.Sound {}
+@:sound("assets/sounds/Powerup12.wav") class __ASSET__assets_sounds_powerup12_wav extends flash.media.Sound {}
+@:sound("assets/sounds/Randomize3.wav") class __ASSET__assets_sounds_randomize3_wav extends flash.media.Sound {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/git/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/git/assets/sounds/flixel.mp3") class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound {}
 
